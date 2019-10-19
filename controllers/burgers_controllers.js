@@ -5,7 +5,7 @@ module.exports = function(app){
 
 app.get("/", function(req, res){
     Burger.findAll().then(function(burgers){
-        res.render("lists", {
+        res.render("index", {
             burgers
         })
     });
