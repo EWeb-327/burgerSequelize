@@ -15,12 +15,16 @@ app.post("/api/burgers", function(req,res){
         burger_name: req.body.burger_name,
         devoured: req.body.devoured
     }).then(function(data){
-        res.end();
+        res.json(data);
     });
 });
 
 app.put("/api/burgers/:id", function(req,res){
+    console.log(req.body.devoured)
     db.Burger.update({
+        devoured: req.body.devoured
+        },  
+        {
         where: {
             id: req.params.id
         }
