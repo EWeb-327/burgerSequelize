@@ -6,4 +6,4 @@ Requires: *Express
           *Sequelize
           *Handlebars
 
-Linked to Deployed Heroku: https://floating-citadel-25268.herokuapp.com/
+Linked to Deployed Heroku: https://rocky-coast-45293.herokuapp.com/
